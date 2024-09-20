@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="text-center my-6">
+    <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Lenguajes de Programación</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-3">
+    {% if lenguajes %}
+        {% for lenguaje in lenguajes %}
+            <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-indigo-800 dark:hover:bg-indigo-700">
+                <div class="bg-white p-2 rounded-t-lg">
+                    <img class="object-cover w-full h-48 rounded-t-lg" src="{{ lenguaje.logo }}" alt="{{ lenguaje.nombre }}">
+                </div>
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{{ lenguaje.nombre }}</h5>
+                    <p class="mb-3 text-gray-700 dark:text-gray-400 font-bold">Popularidad: <span class="font-normal">{{ lenguaje.popularidad }}</span></p>
+                    <p class="mb-3 text-gray-700 dark:text-gray-400 font-bold">Uso: <span class="font-normal">{{ lenguaje.uso }}</span></p>
+                    <p class="mb-3 text-gray-700 dark:text-gray-400 font-bold">Usuarios: <span class="font-normal">{{ lenguaje.usuarios }} usuarios.</span></p>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}
