@@ -27,6 +27,10 @@ Para probar el proyecto, debes seguir los siguientes pasos:
 
 Luego de hacer los pasos anteriores, puedes usar el siguiente enlace: `http://localhost:5000/`
 
+### ¿Dónde puedo ver la grabación?
+
+La grabación de dicha conferencia la puedes encontrar acá: [https://www.youtube.com/watch?v=ZxxOr60NGHM](https://www.youtube.com/watch?v=ZxxOr60NGHM)
+
 ### ¿Cómo usar los endpoints del Backend?
 
 Para visualizar los endpoints utilizados en esta conferencia entra al siguiente [enlace](https://documenter.getpostman.com/view/15268771/2sAXqta1uN).
